@@ -5,9 +5,14 @@ package com.improvdojo.chordtonemapper;
  */
 
 public class Chord {
-    public static Note[] getChord(Note root, Interval[] stacked_intervals){
-        int[] half_steps = getChromaticIntervals(stacked_intervals);
+    public static Note[] getChordFromStacked(Note root, Interval[] stacked_intervals){
+        int[] half_steps = Interval.getChromaticsFromStacked(stacked_intervals);
         return getChord(root, half_steps);
+    }
+
+    public static Note[] getChord(Note root, Interval[] intervals){
+        int[] chromatics = Interval.getChromatics(intervals);
+        return getChord(root, chromatics);
     }
 
     public static Note[] getChord(Note root, int[] half_steps){
@@ -19,15 +24,5 @@ public class Chord {
             chord[i+1] = current;
         }
         return chord;
-    }
-
-    public static int[] getChromaticIntervals(Interval[] stacked_intervals){
-        int[] half_steps = new int[stacked_intervals.length];
-        int current_interval = 0;
-        for(int i = 0; i < stacked_intervals.length; i++){
-            current_interval += stacked_intervals[i].half_steps;
-            half_steps[i] =current_interval;
-        }
-        return half_steps;
     }
 }

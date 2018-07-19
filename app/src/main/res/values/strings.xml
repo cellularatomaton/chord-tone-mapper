@@ -1,13 +1,55 @@
 <resources>
     <string name="app_name">Chord Tone Mapper</string>
     <string name="title_activity_settings">Settings</string>
-    <!-- Musical Symbols -->
-    <string name="major">\u25B3</string>
-    <string name="minor">\u25AC</string>
-    <string name="diminished">\u25CB</string>
-    <string name="augmented">\u002B</string>
+    <!-- Strings -->
+    <string name="string_dialog_title">String Configuration</string>
+    <!-- Qualities -->
+    <string name="quality_dialog_title">Chord Quality</string>
+    <string name="no_quality">No Quality</string>
+    <string name="major">\u25B3 Major</string>
+    <string name="minor">− Minor</string>
+    <string name="diminished">\u25CB Diminished</string>
+    <string name="augmented">\u002B Augmented</string>
+    <!-- Sixths -->
+    <string name="sixth_dialog_title">Sixth Color</string>
+    <string name="no_sixth">No 6th</string>
+    <string name="minor_sixth">− 6th</string>
+    <string name="major_sixth">\u25B3 6th</string>
+    <!-- Sevenths -->
+    <string name="seventh_dialog_title">Seventh Color</string>
+    <string name="no_seventh">No 7th</string>
+    <string name="diminished_seventh">\u25CB 7th</string>
+    <string name="minor_seventh">− 7th</string>
+    <string name="major_seventh">\u25B3 7th</string>
+    <!-- Ninths -->
+    <string name="ninth_dialog_title">Ninth Color</string>
+    <string name="no_ninth">No 9th</string>
+    <string name="minor_ninth">− 9th</string>
+    <string name="major_ninth">\u25B3 9th</string>
+    <!-- Spinner Values -->
+    <string-array name="qualities">
+        <item>@string/no_quality</item>
+        <item>@string/diminished</item>
+        <item>@string/minor</item>
+        <item>@string/major</item>
+        <item>@string/augmented</item>
+    </string-array>
+    <string-array name="sixths">
+        <item>@string/no_sixth</item>
+        <item>@string/minor_sixth</item>
+        <item>@string/major_sixth</item>
+    </string-array>
+    <string-array name="sevenths">
+        <item>@string/no_seventh</item>
+        <item>@string/minor_seventh</item>
+        <item>@string/major_seventh</item>
+    </string-array>
+    <string-array name="ninths">
+        <item>@string/no_ninth</item>
+        <item>@string/minor_ninth</item>
+        <item>@string/major_ninth</item>
+    </string-array>
     <!-- Strings related to Settings -->
-
     <!-- Example General settings -->
     <string name="pref_header_general">General</string>
 
